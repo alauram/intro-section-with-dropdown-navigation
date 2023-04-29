@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.125em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--Almost-White);
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top .left {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 40px 50px 0;
+}
+.options {
+    display: flex;
+    gap: 30px;
+    color: var(--Medium-Gray);
+}
+.top .left button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.130rem;
+    border: none;
+    background-color: var(--Almost-White);
+    cursor: pointer;
+    color: var(--Medium-Gray);
+}
+.arrow1 {
+    width: 13px;
+    height: 8px;
+}
+.arrow1.active {
+    transform: rotate(180deg);
+}
+.arrow2{
+    width: 13px;
+    height: 8px;
+}
+.arrow2.active {
+    transform: rotate(180deg);
+}
+.menu1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 33px -4px rgba(8,8,8,0.2);
+    right: 78%;
+    top: 70px;
+    width: 180px;
+    visibility: hidden;
+    padding: 10px 0;
+}
+.menu1.active {
+    visibility: visible;
+}
+.menu2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 33px -4px rgba(8,8,8,0.2);
+    right: 67%;
+    top: 70px;
+    visibility: hidden;
+    padding: 10px 0;
+
+}
+.menu2.active {
+    visibility: visible;
+}
+.login button {
+    background-color: var(--Almost-White);
+    padding: 10px 15px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+    border: none;
+    color: var(--Medium-Gray);
+    cursor: pointer;
+}
+.register button {
+    background-color: var(--Almost-White);
+    padding: 10px 15px;    
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+    border: 1px solid var(--Medium-Gray);
+    color: var(--Medium-Gray);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.register button:hover {
+    color: black;
+    border-color: black;
+    transform: translateY(-1px);
+    transition: all 1s ease;
+}
+.login button:hover{
+    color: black;
+    transform: translateY(-1px);
+    transition: all 1s ease;
+}
+.btn1:hover, .btn1:hover, .carrers:hover, .about:hover {
+    transform: translateY(-1px);
+    transition: all 1s ease;
+}
+.carrers, .about {
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 5px 10px 25px;    
+    font-weight: 700;
+}
+.row:hover, .list:hover {
+    background: hsla(0, 0%, 78%,.5);
+}
+.list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 20px 10px 25px;  
+    font-size: 1.1rem; 
+}
+.top .right {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 120px 30px;
+}
+.bottom .right img {
+    width: 465px;
+    height: 600px;
+    padding-right: 30px;
+}
+.bottom .left {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 90px 0 63px;
+    gap: 90px;
+}
+.bottom .left h1 {
+    font-weight: 700;
+    font-size: 4.7rem;
+    line-height: 4.5rem;
+    width: 530px;
+}
+.bottom .left p {
+    color: var(--Medium-Gray);
+    width: 425px;
+    line-height: 1.5rem;
+}
+.left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.left-bottom {
+    display: flex;
+    gap: 35px;
+    padding-top: 50px;
+}
+.left-top button {
+    background-color: var(--Almost-White);
+    padding: 15px 20px;    
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.left-top button:hover{
+    color: var(--black);
+    background: transparent;
+    transition: all 0.25s ease;
+}
