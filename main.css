@@ -292,7 +292,7 @@ body {
     }
     .mobile-menu {
         position: absolute;
-        background-color: white;
+        background-color: var(--Almost-White);
         flex-direction: column;
         right: 0;
         min-height: 120%;
@@ -381,14 +381,14 @@ body {
     }
     .mobile-open {
         display: inherit;
-        background-color: var(--Almost-White);
+        background-color: transparent;
         border: none;
         outline: none;
     }
     .mobile-close {
         display: inherit;
         justify-content: end;
-        background-color: white;
+        background-color: transparent;
         width: min-content;
         border: none;
         outline: none;
