@@ -362,7 +362,7 @@ body {
     }
     .left-bottom {
         gap: 1.25rem;
-        padding: 0 0 0 0.9375rem;   
+        padding: 0 0 0 2.3rem; 
     }
     .mobile-open {
         display: inherit;
@@ -392,7 +392,7 @@ body {
     }
    
     .left-bottom img {
-        width: 5rem;
+        width: 4rem;
     }
     .top .left button {
         background-color: white;
